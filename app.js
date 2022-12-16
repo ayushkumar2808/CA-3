@@ -30,7 +30,7 @@ fetch("https://www.themealdb.com/api/json/v1/1/random.php")
   <h4>Area: ${randomMealData.meals[0].strArea}</h4>
   <h3>Ingredients</h3>
   <h4>${randomMealData.meals[0].strIngredient1}<br>${randomMealData.meals[0].strIngredient2}<br>${randomMealData.meals[0].strIngredient3}<br>${randomMealData.meals[0].strIngredient4}<br>${randomMealData.meals[0].strIngredient5}<br>${randomMealData.meals[0].strIngredient6}<br>${randomMealData.meals[0].strIngredient7}<br>${randomMealData.meals[0].strIngredient8}<br>${randomMealData.meals[0].strIngredient9}<br>${randomMealData.meals[0].strIngredient10}<br>${randomMealData.meals[0].strIngredient11}<br>${randomMealData.meals[0].strIngredient12}</h4>
-  </div> ;
+  </div> 
   `
     document.getElementById("modal-flex").innerHTML = data2;
     document.getElementById("meal-card-flex").innerHTML = data;
