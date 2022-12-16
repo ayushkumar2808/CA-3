@@ -290,6 +290,7 @@ flex-wrap: wrap;
     }
     #modal-flex{
         top: 52%;
+      padding-bottom: 1vh;
     }
 
 
