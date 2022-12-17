@@ -1,0 +1,452 @@
+@import url("https://fonts.googleapis.com/css2?family=Passion+One&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@600&display=swap');
+* {
+  /* /* height: 100vh;
+    width: 100%; \\ */
+  margin: 0;
+  
+}
+
+
+.logoimg {
+  height: 17vh;
+  width: 17vh;
+}
+#logoheading {
+  font-family: "Passion One", cursive;
+  padding-top: 1vh;
+  font-size: 3em;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+#header {
+  height: 16vh;
+  display: flex;
+  align-items: center;
+}
+#aboutus{
+    font-family: "Passion One", cursive;
+    font-weight: 300;
+    font-size: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+}
+#searchbuttondiv{
+    background-color: #FE9213;
+   display: flex;
+   height: 34vh;
+   margin-left: 0;
+   align-items:center;
+    width: 100%;
+    /* max-width: 100%; */
+}
+.plateimg{
+    height: 48vh;
+    width: 50vh;
+    margin-top: 8vh;
+    filter: drop-shadow(-4px 4px 11px #313131);
+    
+}
+.burgerimg{
+    height: 45vh;
+    width: 50vh;
+    margin-top: 6vh;
+    margin-right: 10vh;
+    filter: drop-shadow(-9px 16px 13px rgb(49, 49, 49));
+}
+#searchbutton{
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    height: 5vh;
+    width: 15vh;
+    cursor: pointer;
+    margin-top: 0.8vh;
+    font-family: 'Poppins', sans-serif;
+   
+    
+}
+#searchB{
+   display: flex;
+   justify-content: flex-start; 
+   width: 48vh;
+}
+.modal-animation{
+    
+    animation: animate 0.8s forwards;
+}
+
+@keyframes animate {
+    0%{ 
+        box-shadow: none;
+        width: 0;
+        opacity: 0%;
+    }
+    35%{
+        box-shadow: none;
+        width: 15vh;
+    }
+    100%{
+        box-shadow: -1px 7px 400px 600px rgba(0, 0, 0, 0.48);
+        -webkit-box-shadow: -1px 7px 400px 600px rgba(0, 0, 0, 0.48);
+        -moz-box-shadow: -1px 7px 400px 600px rgba(0, 0, 0, 0.48);
+        
+        opacity: 100%;
+        transform: rotate(360deg);
+    }
+   
+    
+}
+.close-animation{
+    animation: closeanime 0.8s ; 
+}
+@keyframes closeanime {
+    0%{
+        opacity: 100%;
+       
+    }
+    100%{
+        opacity: 0%;
+        display: none;
+        transform: rotate(-360deg);
+       
+    }
+    
+}
+#searchbox{
+    border-radius: 25px;
+    height: 5vh;
+    width: 45vh;
+    border: solid white;
+    padding-left: 1vh;
+    margin-right: 1vh;
+    
+   
+}
+footer{
+    position: relative;
+    bottom: 0;
+}
+#srch{
+    padding-left: 1vh;
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+#searchbox::placeholder{
+    padding-left: 1vh;
+    font-family: 'Poppins', sans-serif;
+}
+.tagline{
+    font-family: "Passion One", cursive;
+    font-size: 4.1em;
+    color: white;
+    letter-spacing: 0.05em;
+   
+}
+.text{
+    padding-top: 3vh;
+    text-align: center;
+    font-family: "Passion One", cursive;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    
+}
+#random-meal-card{
+    /* border: solid black; */
+    /* height: fit-content; */
+    display: flex;
+    background-color: #eabc86;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    
+    box-shadow: -1px 7px 37px 0px rgba(123,112,112,0.87);
+-webkit-box-shadow: -1px 7px 37px 0px rgba(123,112,112,0.87);
+-moz-box-shadow: -1px 7px 37px 0px rgba(123,112,112,0.87);
+border-radius: 10px;
+}
+
+#ingre:hover{
+    animation: buttoncolor 0.4s forwards;
+    border: solid black;
+}
+@keyframes buttoncolor {
+    0%{
+        color: white;
+        background-color: black;
+    }
+    100%{
+        background-color: #eabc86;
+        color: black;
+   
+    }
+    
+}
+#ingre{
+    box-shadow: -5px 11px 13px -6px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -5px 11px 13px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -5px 11px 13px -6px rgba(0,0,0,0.75);
+    padding-bottom: 0.3vh;
+    font-family: 'Poppins', sans-serif;
+}
+#closeMod{
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    height: 5vh;
+    width: 15vh;
+    cursor: pointer;
+    
+}
+button{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    height: 5vh;
+    width: 15vh;
+}
+#meal-card-flex{
+    display: flex;
+    justify-content: center;
+    margin-left: 1vh;
+    margin-right: 1vh;
+}
+
+.random-meal-image{
+    height: 24vh;
+    border-top-left-radius: 10px ;
+}
+#random-meal-details{
+    margin: 1vh;
+}
+h3,h4{
+    margin-bottom: 2vh;
+}
+#modal{
+    /* border:  solid black ; */
+    /* height: max-content; */
+    height: fit-content;
+    width: 35%;
+    background-color: rgb(255, 255, 255);
+    margin-left: 1vh;
+    margin-right: 1vh;
+    font-family: 'Inter', sans-serif;
+    display: none;
+    border-radius: 8px;
+    text-align: center;
+    z-index: 4;
+   
+}
+
+  
+  /* .fcc-btn:hover {
+    background-color: #f8f8ff;
+  } */
+ 
+
+#modal-flex{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    width: 90%;
+    /* bottom: 50vh; */
+}
+.fcc-btn {
+    background-color: #000000;
+    box-shadow: 0 5px 0 #FE9213;
+    color: white;
+    padding: 0.5em 0.8em;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    text-decoration: none;
+    border-radius: 5px;
+    /* text-transform: uppercase; */
+  }
+  
+  .fcc-btn:hover {
+    background-color: black;
+  }
+  
+  .fcc-btn:active {
+    box-shadow: none;
+    top: 5px;
+  }
+.ingText{
+    font-size: small;
+}
+#random-meal-card:hover{
+    background-color: #eabc86;
+    
+}
+.bigText{
+    
+    font-size: larger;
+    margin-top: 3vh;
+}
+.biggerText{
+    font-size: x-large;
+}
+
+#modal-close{
+    margin-top: 0.5vh;
+    margin-right: 0.8vh;
+    cursor: pointer;
+    background-color: #FE9213;
+}
+#Searchresults{
+    text-align: center;
+    margin-bottom: 5vh;
+    margin-top: 3vh;
+    font-family: "Passion One", cursive;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+}
+#cat-search{
+    display: flex;
+    /* justify-content: space-around; */
+    flex-direction: row;
+    overflow-x: auto;
+    /* flex-wrap: wrap; */
+    
+}
+.card{
+    box-shadow: 0 0 4px 3px rgb(238, 238, 238) ;
+    text-align: center;
+    width: fit-content;
+    margin: 1rem;
+    height: 35vh;
+    min-width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+flex-wrap: wrap;
+border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    box-shadow: -1px 7px 29px 7px rgba(123,112,112,0.90);
+-webkit-box-shadow: -1px 7px 29px 7px rgba(123,112,112,0.90);
+-moz-box-shadow: -1px 7px 29px 7px rgba(123,112,112,0.90);
+  }
+  /* .card:hover{
+
+       
+     
+  } */
+  #catimg{
+    width: 75%;
+    height: 65%;
+    
+  
+  }
+  .transparent{
+    width: 100%;
+    height: 120vh;
+    border: solid black;
+    background-color: black;
+    opacity: 40%;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+  }
+  
+ 
+  .title{
+    font-size: 1em;
+  }
+  footer{
+    padding: 0.5vh;
+    background-color: #FE9213;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    
+  }
+  .socials{
+    border-radius: 7px;
+    height: 5vh;
+    width: 45%;
+  }
+  #made-with-love{
+    font-size: 1em;
+  }
+ 
+@media only screen and (max-width: 1200px) {
+    .plateimg{
+        display: none;
+    }
+    .fdf{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .tagline{
+        font-size: 3em;
+        text-align: center;
+        margin-bottom: 2vh;
+        margin-left: 1vh
+    }
+    #searchbutton{
+        margin-top: 0.8vh;
+    }
+    .card{
+        margin: 3%;
+        min-width: fit-content;
+        flex-direction: row;
+        height: 34vh;
+        display: block;
+    }
+    #catimg{
+        width: 100%;
+        height: 70%;
+    }
+    .title{
+        text-align: center;
+    }
+    .cat-search{
+        flex-direction: row;
+        overflow-x: auto;
+        min-width: 60%;
+        justify-content: center;
+        height: 45vh;
+    }
+    #random-meal-card{
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+    }
+  
+    #searchbox,#srch,.tagline,#searchB{
+        width: 90vw;
+    }
+    #modal{
+        width: 80%;
+    }
+    #modal-flex{
+        top: 52%;
+    }
+
+    .random-meal-image{
+        border-top-left-radius: 0px ;
+    }
+    .burgerimg{
+        display: none;
+    
+    }
+    #aboutus{
+        display: none;
+    }
+
+
+}
